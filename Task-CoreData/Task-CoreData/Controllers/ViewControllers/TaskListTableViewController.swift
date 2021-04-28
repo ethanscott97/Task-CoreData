@@ -24,7 +24,7 @@ class TaskListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return TaskController.sharedInstance.tasks.count
     }
 
@@ -40,11 +40,22 @@ class TaskListTableViewController: UITableViewController {
 
         return cell
     }
-
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let taskToDelete = TaskController.sharedInstance.tasks[indexPath.row]
+            TaskController.sharedInstance.deleteTask(task: taskToDelete)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        75
+        
+    }
+
     // MARK: - Navigation
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       //IIDOO
         if segue.identifier == "toDetailVC" {
@@ -63,6 +74,4 @@ extension TaskListTableViewController: TaskCompletionDelegate {
         TaskController.sharedInstance.toggleIsCompleted(task: task)
         sender.updateViews()
     }
-    
-    
 }

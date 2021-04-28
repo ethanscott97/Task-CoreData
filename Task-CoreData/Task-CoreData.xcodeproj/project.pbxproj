@@ -19,6 +19,8 @@
 		AA04249B2638AAA900747909 /* Task+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA04249A2638AAA900747909 /* Task+Convenience.swift */; };
 		AA04249E2638ADC200747909 /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA04249D2638ADC200747909 /* TaskController.swift */; };
 		AA0424A42638C19E00747909 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0424A32638C19E00747909 /* TaskTableViewCell.swift */; };
+		AA0424B22639D98100747909 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0424B12639D98100747909 /* Strings.swift */; };
+		AA0424BC263A176A00747909 /* DateToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0424BB263A176A00747909 /* DateToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		AA04249A2638AAA900747909 /* Task+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+Convenience.swift"; sourceTree = "<group>"; };
 		AA04249D2638ADC200747909 /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
 		AA0424A32638C19E00747909 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		AA0424B12639D98100747909 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		AA0424BB263A176A00747909 /* DateToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateToString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				7EDB767225B6996A00B80B7D /* SceneDelegate.swift */,
 				7EDB767C25B6996D00B80B7D /* Assets.xcassets */,
 				7EDB768125B6996D00B80B7D /* Info.plist */,
+				AA0424B12639D98100747909 /* Strings.swift */,
+				AA0424BB263A176A00747909 /* DateToString.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -221,10 +227,12 @@
 			files = (
 				7EDB767125B6996A00B80B7D /* AppDelegate.swift in Sources */,
 				AA0424912638A46000747909 /* TaskListTableViewController.swift in Sources */,
+				AA0424B22639D98100747909 /* Strings.swift in Sources */,
 				AA0424A42638C19E00747909 /* TaskTableViewCell.swift in Sources */,
 				7EDB767325B6996A00B80B7D /* SceneDelegate.swift in Sources */,
 				AA04249B2638AAA900747909 /* Task+Convenience.swift in Sources */,
 				AA0424982638A97700747909 /* CoreDataStack.swift in Sources */,
+				AA0424BC263A176A00747909 /* DateToString.swift in Sources */,
 				7EDB767B25B6996A00B80B7D /* Task_CoreData.xcdatamodeld in Sources */,
 				AA04249E2638ADC200747909 /* TaskController.swift in Sources */,
 				AA0424952638A59800747909 /* TaskDetailViewController.swift in Sources */,

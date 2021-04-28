@@ -16,6 +16,7 @@ class TaskTableViewCell: UITableViewCell {
     //MARK: - Outlets
     @IBOutlet weak var taskNameLabel: UILabel!
     @IBOutlet weak var completionButton: UIButton!
+    @IBOutlet weak var dueDateLabel: UILabel!
     
     //MARK: - Properties
     weak var delegate: TaskCompletionDelegate?
@@ -36,6 +37,7 @@ class TaskTableViewCell: UITableViewCell {
     func updateViews() {
         guard let task = task else {return}
         taskNameLabel.text = task.name
+        dueDateLabel.text = task.dueDate?.formatToString()
         
         if task.isComplete {
             completionButton.setBackgroundImage(UIImage(systemName: "checkmark.square"), for: .normal)
@@ -43,4 +45,4 @@ class TaskTableViewCell: UITableViewCell {
             completionButton.setBackgroundImage(UIImage(systemName: "square"), for: .normal)
         }
     }
-}
+}//End of class
